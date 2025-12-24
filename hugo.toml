@@ -1,0 +1,142 @@
+baseURL = "https://hbjnmcd.github.io"
+title = "Веб-портфолио Натальи Нечаевой"
+theme = "jane"
+
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    languageCode = "ru"
+    weight = 1
+
+[sitemap]                 # essential
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+  name = "Учебные курсы"
+  identifier = "courses"
+  url = "#"
+  weight = 20
+
+[[menu.main]]
+  name = "1 курс"
+  identifier = "courses1"
+  parent = "courses"
+  url = "/1kurs/"
+  weight = 1
+
+  [[menu.main]]
+    name = "2 курс"
+    identifier = "courses2"
+    parent = "courses"
+    url = "/2kurs/"
+    weight = 2
+
+  [[menu.main]]
+    name = "3 курс"
+    identifier = "courses3"
+    parent = "courses"
+    url = "/3kurs/"
+    weight = 3
+
+  [[menu.main]]
+    name = "4 курс"
+    identifier = "courses4"
+    parent = "courses"
+    url = "/4kurs/"
+    weight = 4
+
+[[menu.main]]
+  name = "Курсовые работы"
+  identifier = "coursework"
+  url = "#"
+  weight = 30
+
+  [[menu.main]]
+    name = "1 курс"
+    identifier = "coursework1"
+    parent = "coursework"
+    url = "/coursework1"
+    weight = 1
+
+  [[menu.main]]
+    name = "2 курс"
+    identifier = "coursework2"
+    parent = "coursework"
+    url = "/coursework2"
+    weight = 2
+
+  [[menu.main]]
+    name = "3 курс"
+    identifier = "coursework3"
+    parent = "coursework"
+    url = "/coursework3"
+    weight = 3
+
+  [[menu.main]]
+    name = "4 курс"
+    identifier = "coursework4"
+    parent = "coursework"
+    url = "/coursework4"
+    weight = 4
+
+[[menu.main]]
+  name = "Практики"
+  identifier = "pract"
+  url = "#"
+  weight = 50
+
+  [[menu.main]]
+    name = "1 курс"
+    parent = "pract"
+    url = "/pract1/"
+    weight = 1
+
+  [[menu.main]]
+    name = "2 курс"
+    parent = "pract"
+    url = "/pract2/"
+    weight = 2
+
+  [[menu.main]]
+    name = "3 курс"
+    parent = "pract"
+    url = "/pract3/"
+    weight = 3
+
+  [[menu.main]]
+    name = "4 курс"
+    parent = "pract"
+    url = "/pract4/"
+    weight = 4
+
+  
+
+[params]
+  since = "2025"            # Site creation time 
+  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
+  showAuthorInfo = false
+  author.name = "Natali"      # essential
+  author.email = "na.nechaeva02@gmail.com" # optional, for RSS
+
+  # site info (optional)
+  logoTitle = "Портфолио"        # default: the title value
+  keywords = ["Hugo", "theme","jane"]
+  description = "Пример сайта портфолио."
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2005-01-02"
+
+  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
+  
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = ['custom.css']            # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+  [params.social]           
+    g-github = "http://localhost:1313"
