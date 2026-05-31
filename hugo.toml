@@ -16,39 +16,6 @@ defaultContentLanguageInSubdir = false
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]
-  name = "Учебные курсы"
-  identifier = "courses"
-  url = "#"
-  weight = 20
-
-[[menu.main]]
-  name = "1 курс"
-  identifier = "courses1"
-  parent = "courses"
-  url = "/1kurs/"
-  weight = 1
-
-  [[menu.main]]
-    name = "2 курс"
-    identifier = "courses2"
-    parent = "courses"
-    url = "/2kurs/"
-    weight = 2
-
-  [[menu.main]]
-    name = "3 курс"
-    identifier = "courses3"
-    parent = "courses"
-    url = "/3kurs/"
-    weight = 3
-
-  [[menu.main]]
-    name = "4 курс"
-    identifier = "courses4"
-    parent = "courses"
-    url = "/4kurs/"
-    weight = 4
 
 [[menu.main]]
   name = "Курсовые работы"
