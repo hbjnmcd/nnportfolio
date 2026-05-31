@@ -1,25 +1,34 @@
 {{ define "content" }}
+
 <div class="home-container">
 
-  <!-- Контент из content/_index.md -->
   {{ if .Content }}
     <div class="home-intro">
       {{ .Content }}
     </div>
   {{ end }}
 
+  <hr class="home-divider">
 
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}
-    {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
-  {{ end }}
+  <h2 class="section-title">Учебные модули</h2>
 
-  {{ $paginator := .Paginate $pages }}
-  {{ range $paginator.Pages }}
-    {{ .Render "summary" }}
-  {{ end }}
+  <div class="modules-grid">
 
-  {{ partial "pagination.html" . }}
+    {{ range where site.RegularPages "Section" "modules" }}
+
+      <div class="module-card">
+        <details>
+          <summary>{{ .Title }}</summary>
+
+          <div class="module-content">
+            {{ .Content }}</div>
+        </details>
+      </div>
+
+    {{ end }}
+
+  </div>
 
 </div>
+
 {{ end }}

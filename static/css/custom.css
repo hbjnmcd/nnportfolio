@@ -1,3 +1,7 @@
+/* =========================
+   СТАРЫЕ КАРТОЧКИ (оставляем)
+   ========================= */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -12,12 +16,13 @@
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     background: white;
 }
 
 .card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 .card-image {
@@ -33,3 +38,179 @@
 .card p {
     padding: 0 16px 16px;
 }
+
+
+/* =========================
+   ГЛАВНАЯ СТРАНИЦА
+   ========================= */
+
+.home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-intro {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.home-intro h2 {
+    text-align: center;
+}
+
+.home-divider {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   МОДУЛИ (НОВАЯ СИСТЕМА)
+   ========================= */
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* карточка модуля */
+.module-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 14px 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* раскрывающийся заголовок */
+.module-card summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    list-style: none;
+    outline: none;
+}
+
+.module-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.module-card summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* контент внутри модуля */
+.module-content {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.module-content a {
+    display: block;
+    margin: 6px 0;
+    color: #2c6bed;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.module-content a:hover {
+    color: #1a4fd8;
+    text-decoration: underline;
+}
+
+.module-card {
+    border-radius: 14px;
+    padding: 14px 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card {
+    border-radius: 14px;
+    padding: 14px 16px;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Белые карточки */
+.module-card:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Голубые карточки с градиентом */
+.module-card:nth-child(even) {
+    background: linear-gradient(135deg, #eaf4ff 0%, #ffffff 100%);
+}
+
+.module-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+}
+
+
+
+.module-card:hover {
+    box-shadow: 0 12px 30px rgba(42, 123, 255, 0.18);
+}
+
+.module-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+
+.module-card details[open] .module-content {
+    max-height: 600px;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.module-card {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.module-card:nth-child(1) { animation-delay: 0.05s; }
+.module-card:nth-child(2) { animation-delay: 0.10s; }
+.module-card:nth-child(3) { animation-delay: 0.15s; }
+.module-card:nth-child(4) { animation-delay: 0.20s; }
+.module-card:nth-child(5) { animation-delay: 0.25s; }
+.module-card:nth-child(6) { animation-delay: 0.30s; }
+.module-card:nth-child(7) { animation-delay: 0.35s; }
+.module-card:nth-child(8) { animation-delay: 0.40s; }
+.module-card:nth-child(9) { animation-delay: 0.45s; }
+.module-card:nth-child(10) { animation-delay: 0.50s; }
+.module-card:nth-child(11) { animation-delay: 0.55s; }
