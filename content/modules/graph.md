@@ -3,6 +3,6 @@ title: "Компьютерная графика и управление инфо
 draft: false
 ---
 
-- [Базы данных](https://github.com/...)
-- [Математические основы компьютерной графики](https://github.com/...)
-- [Инженерная графика](https://github.com/...)
+- [Базы данных](https://github.com/hbjnmcd/db)
+- [Математические основы компьютерной графики](https://github.com/hbjnmcd/nechaeva_math_found)
+- [Инженерная графика](https://drive.google.com/drive/folders/12hbs2_Vyk2qBJ2FyjcutTXI4vjCoTVFR?usp=sharing)
