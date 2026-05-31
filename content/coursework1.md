@@ -8,4 +8,4 @@ description: "Курсовая первого курса"
 Работа была посвящена исследованию работы сил электрического поля с использованием информационных технологий.
 Программная реализация на языке Pascal.
 
-[Текст курсовой работы](https://drive.google.com/drive/folders/17xa1YgcvFbbDNjRBKCpx9LB17y3W9BsQ)
+[Текст курсовой работы](/nnportfolio/files/coursework1.pdf)

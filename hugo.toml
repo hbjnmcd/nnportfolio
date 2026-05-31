@@ -92,26 +92,30 @@ defaultContentLanguageInSubdir = false
 
   [[menu.main]]
     name = "1 курс"
+    identifier = "pract1"
     parent = "pract"
-    url = "/pract1/"
+    url = "/pract1"
     weight = 1
 
   [[menu.main]]
     name = "2 курс"
+    identifier = "pract2"
     parent = "pract"
-    url = "/pract2/"
+    url = "/pract2"
     weight = 2
 
   [[menu.main]]
     name = "3 курс"
+    identifier = "pract3"
     parent = "pract"
-    url = "/pract3/"
+    url = "/pract3"
     weight = 3
 
   [[menu.main]]
     name = "4 курс"
+    identifier = "pract4"
     parent = "pract"
-    url = "/pract4/"
+    url = "/pract4"
     weight = 4
 
   
