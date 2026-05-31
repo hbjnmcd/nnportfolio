@@ -3,5 +3,5 @@ title: "Проектирование и разработка веб-решени
 draft: false
 ---
 
-- [Веб-проектирование и веб-языки](https://github.com/...)
-- [Компьютерный практикум](https://github.com/...)
+- [Веб-проектирование и веб-языки](https://github.com/hbjnmcd/programming/tree/main/веб_проектирование)
+- [Компьютерный практикум](https://github.com/hbjnmcd/programming/tree/main/Компьютерный%20практикум)
